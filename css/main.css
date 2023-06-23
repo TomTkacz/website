@@ -44,6 +44,7 @@ body {
     position: absolute;
     top: var(--header-height);
     width: 100%;
+    overflow-x: hidden;
 }
 
 header {
@@ -62,7 +63,7 @@ header {
     position: inherit;
     background-color: var(--main-background-color);
     font-family: var(--header-font);
-    font-size: 500%;
+    font-size: 450%;
     line-height: var(--header-height);
     padding-right: 15px;
     padding-left: 15px;
@@ -95,8 +96,10 @@ a:hover {
 .main {
     font-family: var(--body-font);
     font-size: 30px;
-    padding: 15px;
-    padding-top: 10px;
+    padding-bottom: 65px;
+    padding-top: 65px;
+    margin-left: 65px;
+    margin-right: 65px;
 }
 
 .body-header {
@@ -110,6 +113,7 @@ a:hover {
 
 .body-header-background-image {
     width: 100%;
+    min-width: 2250px;
     height: inherit;
     object-fit:cover;
 }
@@ -124,6 +128,8 @@ a:hover {
 }
 
 .gray-container h1 {
+    margin-top: 25px;
+    margin-bottom: 0;
     color: white;
     text-shadow: 7px 7px black;
     width: 100%;
@@ -132,12 +138,17 @@ a:hover {
     font-size: 80px;
 }
 .gray-container p {
+    display: flex;
+    top: 0;
     color: white;
     text-shadow: 5px 5px black;
     width: 100%;
     text-align: center;
     font-family: var(--body-font);
     font-size: 45px;
+    height: min-content;
+    align-items: center;
+    justify-content: center;
 }
 
 .footer {
