@@ -51,6 +51,9 @@ body {
 #wrapper {
     min-height: 100%;
     position: relative;
+    min-width: 100%;
+    top: 0;
+    left: 0;
 }
 
 header {
@@ -111,7 +114,6 @@ a:hover {
 
 .body-header-background-image {
     width: 100%;
-    min-width: 2250px;
     object-fit:cover;
     height: 500px;
 }
