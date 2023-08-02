@@ -101,7 +101,6 @@ a:hover {
 }
 
 .body-header {
-    height: 500px;
     font-family: var(--body-font);
     display: flex;
     justify-content: center;
@@ -113,41 +112,40 @@ a:hover {
 .body-header-background-image {
     width: 100%;
     min-width: 2250px;
-    height: inherit;
     object-fit:cover;
+    height: 500px;
 }
 
 .gray-container {
     width: 70%;
     max-width: 2000px;
-    height: 400px;
+    height: fit-content;
+    min-height: 400px;
     position: absolute;
     background-color: rgba(109, 109, 109, 0.85);
     border: 8px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
 }
 
 .gray-container h1 {
-    margin-top: 25px;
-    margin-bottom: 0;
     color: white;
     text-shadow: 7px 7px black;
-    width: 100%;
-    text-align: center;
     font-family: var(--title-font);
-    font-size: 500%;
+    font-size: 4.3vw;
+    margin: 0;
+    margin-bottom: 20px;
 }
+
 .gray-container p {
-    display: flex;
-    top: 0;
+    margin: 0;
     color: white;
     text-shadow: 5px 5px black;
-    width: 100%;
-    text-align: center;
     font-family: var(--body-font);
-    font-size: 45px;
-    justify-content: center;
-    align-items:center;
-    flex-direction: column;
+    font-size: 2.3vw;
 }
 
 .footer {
