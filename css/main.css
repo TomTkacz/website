@@ -45,6 +45,7 @@ body {
     top: var(--header-height);
     width: 100%;
     overflow-x: hidden;
+    background-color: rgb(249, 253, 255);
 }
 
 header {
@@ -53,6 +54,7 @@ header {
     height: var(--header-height);
     width: 100%;
     z-index: 10;
+    border-bottom: 8px solid black;
 }
 
 .header-bar {
@@ -91,6 +93,7 @@ a:hover {
     gap: 70px;
     right:0;
     left:0;
+    padding-top: 10px;
 }
 
 .main {
