@@ -35,7 +35,7 @@
     --title-font: "PixelSmall2";
     --body-font: "PixelMedium";
     --footer-font: "PixelSmall1";
-    --header-height: 10vh;
+    --header-height: calc(130px - 1.2vw);
 }
 
 body {
@@ -46,6 +46,7 @@ body {
     width: 100%;
     overflow-x: hidden;
     background-color: rgb(249, 253, 255);
+    height: 100%;
 }
 
 #wrapper {
@@ -70,14 +71,14 @@ header {
     display: flex;
     background-color: var(--main-background-color);
     font-family: var(--header-font);
-    font-size: 70px;
+    font-size: calc(var(--header-height)/1.2);
     line-height: var(--header-height);
     padding-right: 15px;
     padding-left: 15px;
     padding-top: 10px;
     justify-content:center;
     align-items:center;
-    gap: 50px;
+    gap: 3vw;
 }
 
 a {
@@ -96,7 +97,7 @@ a:hover {
 
 .main {
     font-family: var(--body-font);
-    font-size: 30px;
+    font-size: calc(80px - 2.4vw);
     padding-bottom: 185px;
     padding-top: 65px;
     margin-left: 65px;
@@ -110,6 +111,7 @@ a:hover {
     align-items: center;
     width: 100%;
     position:relative;
+    text-align: center;
 }
 
 .body-header-background-image {
@@ -137,7 +139,7 @@ a:hover {
     color: white;
     text-shadow: 7px 7px black;
     font-family: var(--title-font);
-    font-size: 4.3vw;
+    font-size: calc(90px);
     margin: 0;
     margin-bottom: 20px;
 }
@@ -156,12 +158,13 @@ a:hover {
     justify-content: center;
     gap: 35px;
     font-family: var(--footer-font);
-    font-size: 150%;
-    height: 120px;
+    font-size: calc(50px - 1vw);
+    height: calc(180px - 5vw);
     color:#b3e2ff;
     width: 100%;
     background-color: rgb(0, 0, 34);
     position: absolute;
     bottom: 0;
     left: 0;
+    padding-bottom: 0.2vw;
 }
