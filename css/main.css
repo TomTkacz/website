@@ -35,8 +35,8 @@
     --title-font: "PixelSmall2";
     --body-font: "PixelMedium";
     --footer-font: "PixelSmall1";
-    --header-height: calc(150px - 1.2vw);
-    --footer-height: calc(70px + 2.5vw);
+    --header-height: 110px;
+    --footer-height: 120px;
 }
 
 body {
@@ -72,15 +72,14 @@ header {
     display: flex;
     background-color: var(--main-background-color);
     font-family: var(--header-font);
-    font-size: calc(50px + 1.3vw);
+    font-size: 85px;
     line-height: var(--header-height);
-    padding-right: 15px;
-    padding-left: 15px;
+    padding: 8px 15px 0px 15px;
     justify-content:center;
     align-items:center;
     align-content: center;
     line-height: 30px;
-    gap: 3vw;
+    gap: 50px;
     flex-wrap: wrap;
 }
 
@@ -100,9 +99,13 @@ a:hover {
 
 .main {
     font-family: var(--body-font);
-    font-size: calc(20px + 0.5vw);
-    padding: calc(20px + 1vw) calc(8px + 2vw);
-    padding-bottom: calc(20px + var(--footer-height));
+    font-size: 30px;
+    padding: 50px 110px;
+    padding-bottom: calc(var(--footer-height) + 50px);
+}
+
+.main a {
+    color: #dd5100;
 }
 
 .body-header {
@@ -118,13 +121,14 @@ a:hover {
 .body-header-background-image {
     width: 100%;
     object-fit:none;
-    height: calc(300px + 2.5vw);
+    height: 400px;
+    overflow-x: hidden;
 }
 
 .gray-container {
-    width: calc(115% - 25vw);
-    max-width: 2000px;
-    height: calc(230px);
+    max-width: 1200px;
+    width: 90%;
+    height: 300px;
     position: absolute;
     background-color: rgba(109, 109, 109, 0.85);
     border: 8px solid black;
@@ -134,21 +138,43 @@ a:hover {
     justify-content: center;
 }
 
+.gray-container #title {
+    display: flex;
+    justify-content:center;
+    align-content: center;
+    align-items: center;
+    gap: 25px;
+    flex-direction:row;
+    flex-wrap: wrap;
+}
+
+.gray-container #title h1 {
+    margin: 0;
+    color: white;
+    text-shadow: 5px 5px black;
+    font-family: var(--body-font);
+    font-size: 70px;
+    margin: 10px;
+    word-spacing: -20px;
+    white-space: nowrap;
+    line-height: 70px;
+}
+
 .gray-container p {
     margin: 0;
     color: white;
     text-shadow: 5px 5px black;
     font-family: var(--body-font);
-    font-size: calc(18px + 0.9vw);
+    font-size: 30px;
 }
 
 .footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: calc(3px + 1vw);
+    gap: 15px;
     font-family: var(--footer-font);
-    font-size: calc(20px + 0.5vw);
+    font-size: 25px;
     height: var(--footer-height);
     color:#b3e2ff;
     width: 100%;
@@ -161,4 +187,37 @@ a:hover {
 
 .footer p {
     color: #004d7c;
+}
+
+@media only screen and (max-width: 1250px) {
+    .gray-container #title {
+        display: unset;
+    }
+}
+
+@media only screen and (max-width: 830px) {
+    header {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .gray-container #title h1 {
+        font-size: 40px;
+        word-wrap:break-word;
+        line-height: 40px;
+    }
+
+    :root {
+        --header-height: 210px;
+    }
+
+    .main {
+        padding: 25px 25px calc(25px + var(--footer-height)) 25px;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .footer {
+        gap: 7px;
+    }
 }
