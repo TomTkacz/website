@@ -44,6 +44,7 @@ body {
     padding: 0;
     position: absolute;
     top: var(--header-height);
+    font-family: var(--body-font);
     width: 100%;
     overflow-x: hidden;
     background-color: rgb(249, 253, 255);
@@ -83,6 +84,16 @@ header {
     flex-wrap: wrap;
 }
 
+.main {
+    font-size: 30px;
+    padding: 50px 110px;
+    padding-bottom: calc(var(--footer-height) + 50px);
+}
+
+.main a {
+    color: #dd5100;
+}
+
 a {
     color: unset;
     text-decoration: none;
@@ -95,77 +106,6 @@ b {
 a:hover {
     color: red;
     text-decoration: none;
-}
-
-.main {
-    font-family: var(--body-font);
-    font-size: 30px;
-    padding: 50px 110px;
-    padding-bottom: calc(var(--footer-height) + 50px);
-}
-
-.main a {
-    color: #dd5100;
-}
-
-.body-header {
-    font-family: var(--body-font);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    position:relative;
-    text-align: center;
-}
-
-.body-header-background-image {
-    width: 100%;
-    object-fit:none;
-    height: 400px;
-    overflow-x: hidden;
-}
-
-.gray-container {
-    max-width: 1200px;
-    width: 90%;
-    height: 300px;
-    position: absolute;
-    background-color: rgba(109, 109, 109, 0.85);
-    border: 8px solid black;
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    justify-content: center;
-}
-
-.gray-container #title {
-    display: flex;
-    justify-content:center;
-    align-content: center;
-    align-items: center;
-    gap: 25px;
-    flex-direction:row;
-    flex-wrap: wrap;
-}
-
-.gray-container #title h1 {
-    margin: 0;
-    color: white;
-    text-shadow: 5px 5px black;
-    font-family: var(--body-font);
-    font-size: 70px;
-    margin: 10px;
-    word-spacing: -20px;
-    white-space: nowrap;
-    line-height: 70px;
-}
-
-.gray-container p {
-    margin: 0;
-    color: white;
-    text-shadow: 5px 5px black;
-    font-family: var(--body-font);
-    font-size: 30px;
 }
 
 .footer {
@@ -189,33 +129,17 @@ a:hover {
     color: #004d7c;
 }
 
-@media only screen and (max-width: 1250px) {
-    .gray-container #title {
-        display: unset;
-    }
-}
-
 @media only screen and (max-width: 830px) {
+
     header {
         flex-direction: column;
         gap: 10px;
         font-size: 50px;
     }
 
-    .gray-container #title h1 {
-        font-size: 40px;
-        word-wrap:break-word;
-        line-height: 40px;
-    }
-
     :root {
         --header-height: 150px;
         --footer-height: 70px;
-    }
-
-    .main {
-        padding: 25px 25px calc(25px + var(--footer-height)) 25px;
-        font-size: 25px;
     }
 
 }
