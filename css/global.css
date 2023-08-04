@@ -142,6 +142,10 @@ a:hover {
         --footer-height: 70px;
     }
 
+    .main {
+        font-size: 25px;
+    }
+
 }
 
 @media only screen and (max-width: 375px) {

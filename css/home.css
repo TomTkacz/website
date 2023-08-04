@@ -75,7 +75,6 @@
 
     .main {
         padding: 25px 25px calc(25px + var(--footer-height)) 25px;
-        font-size: 25px;
     }
 
 }
