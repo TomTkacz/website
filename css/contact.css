@@ -1,1 +1,89 @@
-@import url("global.css")
+@import url("global.css");
+
+body {
+    background-color: #ff6883;
+}
+
+.main {
+    text-align: center;
+    background-image: url('../media/ContactBackground.gif');
+    background-repeat: no-repeat;
+    background-size: 800px;
+    background-position: calc(50% + 20px) 280px;
+    margin-bottom: var(--footer-height);
+    padding: 50px;
+}
+
+.main h1 {
+    font-size: 50px;
+    margin-top: 0px;
+}
+
+.main h1 span {
+    white-space: nowrap;
+}
+
+#wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.employment-status {
+    font-size: 40px;
+    margin-top: -20px;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    white-space: nowrap;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+
+#status {
+    background-color: black;
+    padding: 0 10px;
+    padding-bottom: 8px;
+}
+
+.socials-container {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin-top: 40px;
+    list-style: square;
+    margin-left: calc(50% - 90px);
+}
+
+.social a {
+    color: aliceblue;
+    text-shadow: 3px 3px black;
+}
+
+.social a:hover {
+    color: black;
+    text-shadow: 3px 3px aliceblue;
+}
+
+@media only screen and (max-width: 1100px) {
+    .employment-status {
+        flex-direction: column;
+        gap: 5px;
+    }
+}
+
+@media only screen and (max-width: 920px) {
+    .main h1 {
+        font-size: 35px;
+    }
+
+    .social {
+        font-size: 30px;
+    }
+}
+
+@media only screen and (max-width: 515px) {
+    .main h1 {
+        font-size: 30px;
+    }
+}
