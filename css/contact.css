@@ -6,11 +6,6 @@ body {
 
 .main {
     text-align: center;
-    background-image: url('../media/ContactBackground.gif');
-    background-repeat: no-repeat;
-    background-size: 800px;
-    background-position: calc(50% + 20px) 280px;
-    margin-bottom: var(--footer-height);
     padding: 50px;
 }
 
@@ -21,11 +16,6 @@ body {
 
 .main h1 span {
     white-space: nowrap;
-}
-
-#wrapper {
-    display: flex;
-    justify-content: center;
 }
 
 .employment-status {
@@ -43,6 +33,7 @@ body {
     background-color: black;
     padding: 0 10px;
     padding-bottom: 8px;
+    white-space: pre-wrap;
 }
 
 .socials-container {
@@ -65,6 +56,19 @@ body {
     text-shadow: 3px 3px aliceblue;
 }
 
+.image-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#contact-background {
+    top: -70px;
+    position: relative;
+    z-index: -50;
+    margin-left: 100px;
+}
+
 @media only screen and (max-width: 1100px) {
     .employment-status {
         flex-direction: column;
@@ -74,16 +78,24 @@ body {
 
 @media only screen and (max-width: 920px) {
     .main h1 {
-        font-size: 35px;
+        font-size: 40px;
+    }
+
+    .employment-status {
+        font-size: 30px;
     }
 
     .social {
-        font-size: 30px;
+        font-size: 25px;
     }
 }
 
 @media only screen and (max-width: 515px) {
     .main h1 {
         font-size: 30px;
+    }
+
+    #contact-background {
+        visibility: hidden;
     }
 }
