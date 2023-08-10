@@ -49,7 +49,7 @@ body {
     color: var(--secondary-background-color);
 }
 
-.portfolio-item #body a img {
+.portfolio-item #body a #media {
     height: 500px;
     width: 100%;
     object-fit: cover;
