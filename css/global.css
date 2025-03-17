@@ -35,8 +35,8 @@
     --title-font: "PixelSmall2";
     --body-font: "PixelMedium";
     --footer-font: "PixelSmall1";
-    --header-height: 110px;
-    --footer-height: 120px;
+    --header-height: 80px;
+    --footer-height: 80px;
 }
 
 body {
@@ -73,7 +73,7 @@ header {
     display: flex;
     background-color: var(--main-background-color);
     font-family: var(--header-font);
-    font-size: 85px;
+    font-size: 75px;
     line-height: var(--header-height);
     padding: 8px 15px 0px 15px;
     justify-content:center;
@@ -84,8 +84,12 @@ header {
     flex-wrap: wrap;
 }
 
+header a {
+    text-decoration: none;
+}
+
 .main {
-    font-size: 30px;
+    font-size: 25px;
     padding: 50px 110px;
     padding-bottom: calc(var(--footer-height) + 50px);
 }
@@ -96,7 +100,8 @@ header {
 
 a {
     color: unset;
-    text-decoration: none;
+    text-decoration: underline;
+    text-underline-offset: 1.5px;
 }
 
 b {
@@ -127,6 +132,10 @@ a:hover {
 
 .footer p {
     color: #004d7c;
+}
+
+.footer a {
+    text-decoration: none;
 }
 
 @media only screen and (max-width: 830px) {
