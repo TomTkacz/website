@@ -91,7 +91,7 @@ header a {
 .main {
     font-size: 25px;
     padding: 50px 110px;
-    padding-bottom: calc(var(--footer-height) + 50px);
+    padding-bottom: calc(var(--footer-height) + 3vw);
 }
 
 .main a {
@@ -138,7 +138,8 @@ a:hover {
     text-decoration: none;
 }
 
-@media only screen and (max-width: 830px) {
+/* tablet view */
+@media only screen and (max-width: 768px) {
 
     header {
         flex-direction: column;
@@ -157,7 +158,8 @@ a:hover {
 
 }
 
-@media only screen and (max-width: 375px) {
+/* phone view */
+@media only screen and (max-width: 600px) {
     .footer {
         gap: 7px;
     }
