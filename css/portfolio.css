@@ -25,7 +25,7 @@ body {
     width: 42vw;
     background-color: var(--main-background-color);
     color: var(--secondary-background-color);
-    border: 0.5vw solid black;
+    border: var(--outline-size-large) solid black;
     box-sizing: border-box;
 }
 
@@ -44,7 +44,7 @@ body {
 .portfolio-item #heading #title {
     font-size: 3vw;
     word-spacing: -1.5vw;
-    overflow-x: auto;
+    text-overflow: ellipsis;
     white-space: nowrap;
     overflow-y: hidden;
     height: 3.3vw;
@@ -71,7 +71,7 @@ body {
     aspect-ratio: 2;
     width: 100%;
     height: inherit;
-    border: 0.2vw solid var(--secondary-background-color);
+    border: var(--outline-size-small) solid var(--secondary-background-color);
 }
 
 .end-message {
@@ -143,5 +143,9 @@ body {
 
 /* phone view */
 @media only screen and (max-width: 600px) {
+    
+    .portfolio-item #description {
+        font-size: 4vw;
+    }
 
 }

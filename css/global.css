@@ -37,6 +37,8 @@
     --footer-font: "PixelSmall1";
     --header-height: 80px;
     --footer-height: 80px;
+    --outline-size-large: 0.5vw;
+    --outline-size-small: 0.2vw;
 }
 
 body {
@@ -68,7 +70,7 @@ header {
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
-    border-bottom: 8px solid black;
+    border-bottom: var(--outline-size-large) solid black;
     color: rgb(224, 243, 255);
     display: flex;
     background-color: var(--main-background-color);
